@@ -260,7 +260,7 @@ const router = new VueRouter({
 	]
 });
 ```
-<br>
+
 router 이동 및 렌더링<br>
 네비게이션을 위해 route-link 컴포넌트 사용<br>
 속성은 ‘to’ prop을 사용<br>
