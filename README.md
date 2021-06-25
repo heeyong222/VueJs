@@ -17,5 +17,15 @@ SPA는 한개의 페이지 안에서 필요한 영역 부분만 로딩시키는 
 - View : 웹 페이지의 DOM
 - ViewModel : Vue의 역할. -> 기존에는 자바스크립트로 view에 해당하는 DOM에 접근하거나 수정하기 위해 jQuery 같은 라이브러리를 이용했지만 Vue는 view와 Model을 연결하고 자동으로 바인딩 하므로 양방향 통신이 가능하다.
 
-
+## Vue Instance 생성
+```
+<script>
+	new Vue({
+		el:’#app’,
+		data:{
+			message: ‘1’
+		}
+	})
+<script>
+```
 
