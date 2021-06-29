@@ -34,6 +34,7 @@ SPA는 한개의 페이지 안에서 필요한 영역 부분만 로딩시키는 
 - methods : 화면 로직 제어와 관계된 method를 정의하는 속성. 마우스 클릭 이벤트 처리와 같이 화면의 전반적인 이벤트와 화면 동작과 관련된 로직을 추가.
 - created : 뷰 인스턴스가 생성되자마자 실행할 로직 정의
 
+<<<<<<< HEAD
 ## Vue Instance의 유효 범위
 vue instance를 생성하면 html의 특정 범위 안에만 옵션속성들이 적용된다. 이것은 el 속성과 밀접한 관계가 있다.
 1. 뷰 라이브러리 파일 로딩
@@ -43,4 +44,16 @@ vue instance를 생성하면 html의 특정 범위 안에만 옵션속성들이 
 5. 변환된 화면 요소를 사용자가 최종 확인
 
 
+=======
+>>>>>>> 0f78a961081850932f149fabd6dbace3e5639ae2
+
+## Vue Instance Life Cycle
+- beforeCreate : Vue Instnace가 생성되고 각 정보의 설정 ㅈ언에 호출. DOM과 같은 화면 요소에 접근 불가능
+- created : Vue Instance가 생성된 후 데이터들의 설정이 완료된 후 호출. Instance가 화면에 부착하기 전이기 때문에 template 속성에 정의된 DOM 요소에는 접근 불가
+- beforeMount : 마운트가 시작되기 전에 호출
+- mounted : 지정된 element에 Vue Instance 데이터가 마운트(부착) 된 후에 호출. Template 속성에 정의한 화면 요소에 접근할 수 있어 화면 요소를 제어하는 로직 수행
+- beforeUpdate : 데이터가 변경될 때 virtual DOm이 랜더링. 패치되기 전에 호출
+- updated : Vue에서 관리되는 데이터가 변경되어 DOM이 업데이트 된 상태. 데이터 변경 후 화면 요소 제어와 관련된 로직 추가
+- beforeDestroy : Vue Instance가 제거되기 전에 호출
+- destroyed : Vue Instance가 제거된 후에 호출
 
