@@ -57,3 +57,20 @@ vue instance를 생성하면 html의 특정 범위 안에만 옵션속성들이 
 - beforeDestroy : Vue Instance가 제거되기 전에 호출
 - destroyed : Vue Instance가 제거된 후에 호출
 
+## 보간법(Interpolation)
+{{ 속성명 }} 형식<br>
+v-once를 사용하면 데이터 변경 시 업데이트 되지 않는 일회성 보간 수행
+
+## 원시 HTML
+이중 중괄호는 HTML이 아닌 일반 텍스트로 해석된다.<br>
+HTML 을 출력하기 위해서는 v-html 디렉티브 사용
+ex) ```<span v-html=”aaa”></span>```
+
+## 바인딩
+바인딩에는 한가지 표현식만 포함될 수 있으므로<br>
+{{ var a = 1 }} 또는 // 구문. 표현식이아님<br>
+{{ if( ok) {return msg} }} // 조건문은 작동x 삼항연산자 사용해야됨<br>
+들은 작동하지 않는다. 
+
+
+
