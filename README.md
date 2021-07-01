@@ -72,5 +72,17 @@ ex) ```<span v-html=”aaa”></span>```
 {{ if( ok) {return msg} }} // 조건문은 작동x 삼항연산자 사용해야됨<br>
 들은 작동하지 않는다. 
 
+## 디렉티브
+- v-model : 양방향 바인딩 처리를 위해서 사용(form 의 input, textarea)<br>
+- v-bind : 엘리먼트의 속성과 바인딩 처리를 위해서 사용, 약어로 : 사용가능<br>
+- v-show : 조건에 따라 엘리먼트를 화면에 랜더링. style의 display를 변경<br>
+- v-if, v-else-if, v-else : 조건에 따라 엘리먼트를 화면에 렌더링<br>
+ex)``` <span v-if=”age < 10”> ```<br>
+- v-for : 배열이나 객체의 반복에 사용<br>
+ex) ```v-for=”요소변수이름 in 배열” or   v-for=”(요소변수이름, 인덱스) in 배열”```<br>
+- template : 여러 태그를 묶어서 처리할 경우 사용, v-if, v-for, component 등과 함께 많이 사용<br>
+- v-cloak : Vue Instance가 준비될 때 까지 mustache 바인딩을 숨기는데 사용<br>
+
+
 
 
