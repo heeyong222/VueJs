@@ -107,3 +107,18 @@ new Vue({
 
 })
 ```
+
+## Vue Computed 속성
+특정 데이터의 변경사항을 실시간 처리<br>
+캐싱을 이용하여 데이터의 변경이 없을 경우 캐싱된 데이터 반환<br>
+setter, getter를 직접 지정가능<br>
+작성은 method 형태로 작성하지만 vue에서 proxy처리하여 property처럼 사용<br>
+
+## Vue Watch 속성
+Vue Instance의 특정 property가 변경될 때 실행할 콜백 함수 설정
+
+## Vue event
+Dom event를 청취하기 위해 v-on directive 또는 @ 사용<br>
+inline event handling : 메소드 이름을 직접 바인딩 하는 대신 인라인 javascript 구문에 메소드를 사용할 수도 있다. 원본 DOM 이벤트에 엑세스 해야하는 경우 특별한 $event 변수를사용해 메소드에 전달 가능<br>
+method를 이용한 event handling
+
