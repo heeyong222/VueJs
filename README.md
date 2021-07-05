@@ -122,3 +122,10 @@ Dom event를 청취하기 위해 v-on directive 또는 @ 사용<br>
 inline event handling : 메소드 이름을 직접 바인딩 하는 대신 인라인 javascript 구문에 메소드를 사용할 수도 있다. 원본 DOM 이벤트에 엑세스 해야하는 경우 특별한 $event 변수를사용해 메소드에 전달 가능<br>
 method를 이용한 event handling
 
+## Event Modifier 
+event.preventDefault() 와 같이 method내에 작업을 할 수도 있지만 method는 DOM의 이벤트를 처리하는 것보다 data 처리를 위한 로직으로만 작업하는 것이 좋다.<br>
+이 문제를 해결하기위해 vue는 v-on이벤트에 이벤트 수식 제공<br>
+- ```v-on.click.stop=”doThis”``` : 클릭 이벤트 전파 중단
+- ```v-on:submit.prevent=”onSubmit”``` : 제출 이벤트가 페이지를 다시 로드하지 않음
+- ```v-on:click.stop.prevent=”doThat”``` : 수식어는 체이닝 가능
+- ```v-on:submit.prevent``` : 단순히 수식어만 사용 가능
