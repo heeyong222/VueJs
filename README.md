@@ -129,3 +129,16 @@ event.preventDefault() 와 같이 method내에 작업을 할 수도 있지만 me
 - ```v-on:submit.prevent=”onSubmit”``` : 제출 이벤트가 페이지를 다시 로드하지 않음
 - ```v-on:click.stop.prevent=”doThat”``` : 수식어는 체이닝 가능
 - ```v-on:submit.prevent``` : 단순히 수식어만 사용 가능
+
+## 키 수식어 ( Key Modifier ) 
+- v-on:keyup.enter=”submit” : 엔터키를 땟을때 submit해라
+- .enter( .13 )
+- .tab
+- .delete(delete와 backspace 키 모두 캡처)
+- .esc
+- .space
+- .up
+- .down
+- .left
+- .right
+
