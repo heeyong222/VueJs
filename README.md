@@ -142,3 +142,9 @@ event.preventDefault() 와 같이 method내에 작업을 할 수도 있지만 me
 - .left
 - .right
 
+## ref, $refs
+뷰에서는 $refs 속성을 이용해 DOM에 접근 가능<br>
+하지만 Vue의 가장 중요한 목적 중 하나는 개발자가 DOM을 다루지 않게 하는 것이므로 되도록 ref를 사용하는 것을 피하는 것이 좋다.<br>
+ex) ```<input type=”text” v-model=”id” ref=”id”>```
+
+```console.log(this.$refs.id.value)``` => id 에 입력한 값 출력됨
