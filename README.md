@@ -148,3 +148,15 @@ event.preventDefault() 와 같이 method내에 작업을 할 수도 있지만 me
 ex) ```<input type=”text” v-model=”id” ref=”id”>```
 
 ```console.log(this.$refs.id.value)``` => id 에 입력한 값 출력됨
+
+## class binding
+element의 class 와 style을 변경<br>
+v-bind:class 는 조건에 따라 class 적용 가능
+
+## form input bindings ( 폼 입력 바인딩)
+v-model directive를 사용하여 폼 input과 textarea element에 양방향 데이터 바인딩 생성 가능<br>
+text, textarea 태그는 value 속성과 input 이벤트<br>
+체크박스, 라디오버튼은 checked 속성과 change 이벤트<br>
+select 태그는 value를 prop으로 change 를 이벤트로 사용<br>
+
+
