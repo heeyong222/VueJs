@@ -159,4 +159,8 @@ text, textarea 태그는 value 속성과 input 이벤트<br>
 체크박스, 라디오버튼은 checked 속성과 change 이벤트<br>
 select 태그는 value를 prop으로 change 를 이벤트로 사용<br>
 
+## form 수식어
+.lazy : change 이벤트 이후 동기화 ```ex)v-model.lazy=”msg”```<br>
+.number : 사용자 입력이 자동으로 숫자로 형 변환됨<br>
+.trim : input에 입력한 값이 자동으로 trim<br>
 
