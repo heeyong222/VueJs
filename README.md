@@ -88,7 +88,8 @@ filter를 이용하여 표현식에 새로운 결과 형식 적용<br>
 중괄호 보간법 또는 v-bind 속성에서 사용 가능<br>
 ex) 
 ```{{ msg | upper }}
-<div v-bind: id=”rawId | formatId”></div>```
+<div v-bind: id=”rawId | formatId”></div>
+```
 
 전역 필터 : 
 ```
@@ -164,3 +165,21 @@ select 태그는 value를 prop으로 change 를 이벤트로 사용<br>
 .number : 사용자 입력이 자동으로 숫자로 형 변환됨<br>
 .trim : input에 입력한 값이 자동으로 trim<br>
 
+## Component
+Vue 의 가장 강력한 기능 중하나<br>
+HTML Element를 확장하여 재사용 가능한 코드를 캡슐화<br>
+Vue Component는 vue Instance이기도 하기 때문에 모든 옵션 객체를사용<br>
+Life Cyfcle Hook 사용 가능<br>
+전역 컴포넌트
+```
+Vue.component(‘my-component’,{
+	//옵션
+}
+```
+지역 컴포넌트 : 컴포넌트를 components 인스턴스 옵션으로 등록함으로써 다른 인스턴스, 컴포넌트 범위에서만 사용할 수 있는 컴포넌트를 만들 수 있음
+```
+new Vue({   // 
+	components:{
+	}
+})
+```
