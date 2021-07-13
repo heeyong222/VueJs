@@ -183,3 +183,19 @@ new Vue({   //
 	}
 })
 ```
+
+## 컴포넌트간 통신
+부모에서 자식은 props라는 특별 속성으로만 전달가능<br>
+자식에서 부모는 event로만 전달 가능<br>
+
+## props 랜더링 과정
+new Vue()로 상위 컴포넌트인 인스턴스를 하나 생성<br>
+Vue.component()를 이용하여 하위 컴포넌트인 child-component 생성<br>
+<div id=”app”> 내부에 <child-component>가 있기 때문에 하위 컴포넌트가 된다. 처음 생성한 인스턴스 객체가 #app의 요소를 가지기 때문에 부모자식관계 성립.<br>
+```
+하위 컴포넌트에 props 속성 정의[‘propsdata’]
+html에 컴포넌트태그child-component 를 추가한다.
+하위 컴포넌트에 v-bind속성을 사용하면 상위 컴포넌트의 data의 key에 접근 가능
+상위 컴포넌트의 message 속성값인 STring 값이 하위 커모넌트의 props데이터로 전달된다.
+하위 컴포넌트의 template 속성에 정의된 <span>{{propsdata}}</span>에 전달
+```
