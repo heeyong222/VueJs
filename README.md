@@ -199,3 +199,10 @@ html에 컴포넌트태그child-component 를 추가한다.
 상위 컴포넌트의 message 속성값인 STring 값이 하위 커모넌트의 props데이터로 전달된다.
 하위 컴포넌트의 template 속성에 정의된 <span>{{propsdata}}</span>에 전달
 ```
+
+## 동적 props
+v-bind를 사용하여 부모의 데이터에 props를 동적으로 바인딩 가능
+데이터가 상위에서 업데이트 될 떄마다 하위 데이터로 전달
+```<child v-bind:my-message=”parentMsg”></chld>```
+
+
