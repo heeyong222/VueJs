@@ -205,4 +205,15 @@ v-bind를 사용하여 부모의 데이터에 props를 동적으로 바인딩 �
 데이터가 상위에서 업데이트 될 떄마다 하위 데이터로 전달
 ```<child v-bind:my-message=”parentMsg”></chld>```
 
+## 객체의 속성 전달 props
+오브젝트의 모든 속성을 전달할 경우 v-bind:prop-name 대신 v-bind만 작성함으로써 모든 속성을 prop으로 전달 가능
+```post : {
+id:1,
+title:’myjourney’
+}
+```
+```
+<blog-post v-bind=”post”></blog-post>
+```
+
 
