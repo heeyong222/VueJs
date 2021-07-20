@@ -227,3 +227,9 @@ title:’myjourney’
 이벤트 수신:<br>
 ```vm.$on(“이벤트명”, 콜백함수(){ } );```
 
+
+## Event Bus
+비 상하위간 통신<br>
+비어있는 Vue Instance 객체를 Event Bus로 사용<br>
+복잡해질 경우 상태관리 라이브러리인 Vuex 사용 권장<br>
+
