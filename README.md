@@ -215,7 +215,7 @@ title:’myjourney’
 ```
 <blog-post v-bind=”post”></blog-post>
 ```
-
+<br>
 ## 사용자 정의 이벤트
 이벤트 이름:<br>
 - 컴포넌트 및 props와는 달리 이벤트는 자동 대소문자 변환을 제공하지 않는다.<br>
