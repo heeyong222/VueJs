@@ -11,6 +11,7 @@ SPA는 한개의 페이지 안에서 필요한 영역 부분만 로딩시키는 
 - Versatile(유연성)
 - Performant(고성능)
 
+
 ## MVVM 패턴
 - Model + View + ViewModel
 - Model : 순수 자바스크립트 객체
