@@ -234,3 +234,16 @@ title:’myjourney’
 비어있는 Vue Instance 객체를 Event Bus로 사용<br>
 복잡해질 경우 상태관리 라이브러리인 Vuex 사용 권장<br>
 
+## Axious
+Vue에서 권고하는 HTTP 통신 라이브러리
+```
+axios({
+	method: ‘get’,
+	url: ‘/user/ssafy’,
+	responseType: ‘json’,
+})
+.then(function ( response ) {
+	//logic
+})
+```
+
