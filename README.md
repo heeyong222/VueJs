@@ -252,4 +252,11 @@ axios({
 - 라우터는 컴포넌트와 맵핑
 - Vue를 이용한 SPA를 제작할 때 유용
 - URL에 따라 컴포넌트를 연결하고 설정된 컴포넌트를 보여줌
-
+```
+const router = new VueRouter({
+	routes: [
+		{path: ‘/’, component: Main // 라우트 컴포넌트 정의 },
+		{path: ‘/’, component: Main // 라우트 컴포넌트 정의 },
+	]
+});
+```
