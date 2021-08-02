@@ -236,6 +236,14 @@ title:’myjourney’
 
 ## Axious
 Vue에서 권고하는 HTTP 통신 라이브러리
+- 불러오기 : axios.get(url[, config])
+- 입력하기 : axios.post(url[, data[, config]])
+- 수정하기 : axios.patch(url[, data[, config]])
+- 삭제하기 : axios.delete(url[, config])
+
+
+출처: https://uxgjs.tistory.com/138 [UX 공작소]
+
 ```
 axios({
 	method: ‘get’,
